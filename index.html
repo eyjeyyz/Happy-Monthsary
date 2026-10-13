@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff6f3" />
+    <meta
+      name="description"
+      content="A little interactive love letter for someone special."
+    />
+    <title>A Little Love Letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="scene">
+      <div class="glow glow-one" aria-hidden="true"></div>
+      <div class="glow glow-two" aria-hidden="true"></div>
+      <div class="sparkle sparkle-one" aria-hidden="true">✦</div>
+      <div class="sparkle sparkle-two" aria-hidden="true">✧</div>
+      <div class="sparkle sparkle-three" aria-hidden="true">✦</div>
+
+      <section class="love-note" aria-labelledby="page-title">
+        <p class="eyebrow"><span aria-hidden="true">♡</span> A little something for you</p>
+        <h1 id="page-title">To my <em>favorite</em> person</h1>
+        <p class="intro">I made this just for you. Go on, open it…</p>
+
+        <div class="envelope-wrap">
+          <button
+            class="envelope"
+            id="envelope"
+            type="button"
+            aria-label="Open your love letter"
+            aria-expanded="false"
+            aria-controls="letter"
+          >
+            <span class="letter-peek" aria-hidden="true">
+              <span class="peek-heart">♡</span>
+            </span>
+            <span class="envelope-back" aria-hidden="true"></span>
+            <span class="envelope-flap" aria-hidden="true"></span>
+            <span class="envelope-front" aria-hidden="true"></span>
+            <span class="envelope-seal" aria-hidden="true">♡</span>
+          </button>
+          <span class="tap-hint" id="tap-hint">tap the envelope</span>
+        </div>
+
+        <article class="letter" id="letter" aria-hidden="true">
+          <div class="letter-inner">
+            <p class="letter-date">Para kay Angel,</p>
+            <h2>Mahal na mahal kita.</h2>
+            <p>
+             Happy monthsary!!! Salamat sa pagiging patient mo sakin and never ka napagod sa mga kalokohan ko
+             even tho na pagod na pagod ka afterclass. Masaya ako tuwing kasama kita, nailalabas ko kung sino 
+             talaga ako. 
+            </p>
+            <p>
+             Paborito ko ang mga oras na nagtatalo tayo sa mga social issues, masaya akong nakikipag argue sayo.
+             Pasensya ka na at hindi kita makakasama sa araw na ito, babawi ako sayo. 
+            </p>
+            <p class="letter-signoff">-Aj<span></span></p>
+            <button class="heart-button" id="heart-button" type="button">
+              <span aria-hidden="true">♥</span> TapTapTap
+            </button>
+          </div>
+        </article>
+
+        <p class="footer-note">Made with <span aria-label="love">♥</span> just for you</p>
+        <p class="sr-only" id="announcement" aria-live="polite"></p>
+      </section>
+    </main>
+  </body>
+</html>
